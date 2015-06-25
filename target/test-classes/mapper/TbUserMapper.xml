@@ -1,0 +1,101 @@
+<!DOCTYPE mapper PUBLIC "-//mapper.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.sy.dao.TbUserDao">
+     
+        <resultMap type="cn.com.sy.entity.TbUser" id="userMap">
+           <result property="pkId" column="pk_id"/>
+           <result property="userName" column="user_name"/>
+           <result property="password" column="pwd"/>
+           <result property="email" column="email"/>
+           <result property="createTime" column="create_time"/>
+           <result property="photo" column="photo"/>
+           <result property="modifiedTime" column="modified_time"/>
+           <result property="isDel" column="is_del"/>
+           <result property="phone" column="phone"/>
+           <result property="sex" column="sex"/>
+           <result property="birthday" column="birthday"/>
+        </resultMap> 
+
+        <insert id="addUser" parameterType="cn.com.sy.entity.TbUser">
+           insert into tb_user(phone,pwd,create_time)
+           values
+           (
+           #{phone},
+           #{password},
+           now()
+           )
+        </insert>
+
+        <update id="updateUser" parameterType="cn.com.sy.entity.TbUser">
+           update tb_user
+           set
+           pwd=#{password},modified_time=now()
+           where pk_id=#{pkId}
+        </update>
+        
+        <update id="updateUserPhoto" parameterType="cn.com.sy.entity.TbUser">
+           update tb_user
+           set
+           photo=#{photo}
+           where pk_id=#{pkId}
+        </update>
+        
+         <update id="updateUserEmail" parameterType="cn.com.sy.entity.TbUser">
+           update tb_user
+           set
+           email=#{email}
+           where pk_id=#{pkId}
+        </update>
+        
+        <select id="getUserByLogin" parameterType="cn.com.sy.entity.TbUser" resultMap="userMap">
+           select * from tb_user
+           where 
+           pwd=#{password}  and is_del=0
+           <if test="userName!=null and userName!=''">
+              and phone like "%"#{userName}"%"
+           </if>
+           <if test="userName!=null and userName!=''">
+              or user_name like "%"#{userName}"%"
+           </if>
+        
+        </select>
+        
+        <select id="getUserByEmail" parameterType="cn.com.sy.entity.TbUser"  resultMap="userMap">
+          select * from tb_user
+          where
+          email=#{email}        
+        </select>
+        
+        <select id="getUserByMobile" parameterType="STRING" resultMap="userMap">
+          select * from tb_user
+          where
+          phone=#{mobile}   
+        </select>
+        
+        <select id="getUserById" parameterType="STRING" resultMap="userMap">
+          select * from tb_user
+          where
+          pk_id=#{userId} 
+        </select>
+        
+        <select id="updateUserName" parameterType="cn.com.sy.entity.TbUser">
+             update tb_user
+             set user_name=#{userName}
+             where pk_id=#{pkId}
+        </select>
+        
+        <select id="getUserListByName" parameterType="cn.com.sy.entity.TbUser" resultMap="userMap">
+            select * from tb_user
+            where 
+            user_name=#{userName}
+        </select>
+	
+	    <select id="updateUserInfo" parameterType="cn.com.sy.entity.TbUser">
+	       update tb_user
+           set 
+           sex=#{sex},birthday=#{birthday}   
+           where pk_id=#{pkId}
+	    </select>
+	
+	
+</mapper> 

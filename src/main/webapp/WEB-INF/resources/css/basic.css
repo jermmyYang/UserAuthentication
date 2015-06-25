@@ -1,0 +1,150 @@
+.quc-wrapper .quc-mod-modify-password {
+	padding: 0 40px 30px
+}
+
+.quc-mod-modify-password .quc-tip {
+	height: 14px;
+	line-height: 14px;
+	padding: 15px 0 2px 75px
+}
+
+.quc-mod-modify-password .quc-label {
+	color: #333;
+	display: inline-block;
+	font-size: 14px;
+	height: 41px;
+	line-height: 41px;
+	padding-right: 10px;
+	text-align: right;
+	width: 60px
+}
+
+.quc-mod-modify-password .quc-button-submit {
+	color: #fff;
+	font-size: 14px;
+	margin-left: 73px
+}
+
+.quc-mod-modify-password .quc-form p {
+	padding: 5px 0
+}
+
+.mod-setavator {
+	padding-top: 20px;
+	position: relative
+}
+
+.iptp {
+	height: 30px;
+	_left: 20px;
+	overflow: hidden;
+	position: relative;
+	_top: 38px;
+	width: 350px
+}
+
+.photol {
+	float: left;
+	padding: 20px 0 0 20px
+}
+
+.photor {
+	float: left;
+	padding: 20px 0 0 40px
+}
+
+.btn4,.iptbut {
+	padding: 3px 10px
+}
+
+.tit1 span {
+	padding-left: 20px
+}
+
+.iptp .ipttext {
+	height: 24px;
+	line-height: 26px;
+	position: absolute;
+	width: 235px;
+	z-index: 5
+}
+
+.iptp .iptbut {
+	position: absolute;
+	width: 70px;
+	z-index: 5
+}
+
+.mod-setavator .text-tip {
+	line-height: 24px;
+	padding: 5px 0
+}
+
+.mod-setavator .errmsg {
+	padding-left: 10px
+}
+
+.mod-setavator .iptp .iptfile {
+	cursor: pointer;
+	height: 26px;
+	left: 0;
+	line-height: 26px;
+	opacity: 0;
+	position: absolute;
+	width: 310px;
+	z-index: 10;
+	filter: alpha(opacity = 0)
+}
+
+p#back-to-top {
+	bottom: 60px;
+	display: none;
+	left: 50%;
+	margin-left: 479px;
+	position: fixed;
+	_position: absolute
+}
+
+p#back-to-top a {
+	color: #d1d1d1;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	-moz-transition: color 1s;
+	-webkit-transition: color 1s;
+	-o-transition: color 1s;
+	width: 64px
+}
+
+p#back-to-top a:hover {
+	color: #979797
+}
+
+#back-to-top a:hover span,p#back-to-top a span {
+	background: transparent url(/static/img/go_top.png?v=9a1fb.png)
+		no-repeat
+}
+
+p#back-to-top a span {
+	border-radius: 6px;
+	display: block;
+	height: 60px;
+	margin-bottom: 5px;
+	-moz-transition: background 1s;
+	-webkit-transition: background 1s;
+	-o-transition: background 1s;
+	width: 58px
+}
+
+.art-mod {
+	padding-bottom: 30px
+}
+
+.art-hd{
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.mod-3 .art-mod,.mod-4 .art-mod {
+	padding: 20px 30px
+}

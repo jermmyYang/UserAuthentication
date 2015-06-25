@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//deploy/conf=UTF-8
+encoding//deploy/conf/ugc.properties=UTF-8
+encoding//src/main/java=UTF-8
+encoding//src/main/java/cn/com/sy/util/ImageGenerateUtil.java=UTF-8
+encoding//src/main/java/cn/com/sy/util/Md5Util.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/WEB-INF/views/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/person.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/register.jsp=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

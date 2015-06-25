@@ -1,0 +1,69 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+    <id>ugc</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>authentication/webapps/authentication/WEB-INF/lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+
+	<fileSets>
+		<fileSet>
+			<directory>deploy/conf/</directory>
+			<outputDirectory>ugc/conf</outputDirectory>
+		</fileSet>
+        <fileSet>
+            <directory>deploy/bin</directory>
+            <excludes>
+                <exclude>service</exclude>
+                <exclude>env-api.conf</exclude>
+            </excludes>
+            <fileMode>644</fileMode>
+            <outputDirectory>ugc/bin</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>deploy/bin</directory>
+            <includes>
+                <include>service</include>
+            </includes>
+            <fileMode>754</fileMode>
+            <outputDirectory>ugc/bin</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>deploy/scripts</directory>
+            <excludes>
+                <exclude>*.sh</exclude>
+            </excludes>
+            <outputDirectory>ugc/scripts</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>deploy/scripts</directory>
+            <includes>
+                <include>*.sh</include>
+            </includes>
+            <fileMode>754</fileMode>
+            <outputDirectory>ugc/scripts</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/webapp/</directory>
+            <outputDirectory>ugc/webapps/ugc</outputDirectory>
+        </fileSet>
+	</fileSets>
+	
+	<files>
+		<file>
+			<source>UpdateNote.txt</source>
+			<destName>UpdateNote.txt</destName>
+			<outputDirectory>ugc/</outputDirectory>
+		</file>
+	</files>
+
+</assembly>

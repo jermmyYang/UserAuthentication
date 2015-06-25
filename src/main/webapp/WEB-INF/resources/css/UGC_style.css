@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body {padding:0;margin:0;text-align:left;color:#444;font-size:12px;font-family:Arial, sans-serif; line-height:160%; text-decoration:none;}
+h1, h2, h3, h4, h5, h6, form, div, p, i, img, ul, li, ol, table, tr, td,th, fieldset, label, legend,button,input,dl,dt,dd,hr{ margin:0;padding:0;border:none;background:none;}
+li{list-style:none;}
+.clear{clear:both}
+.blue{color:#06F;}
+.blue_btn{background:#147aa1; color:#fff; font-weight:bold; font-size:14px; padding:4px 15px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.065) inset; cursor:pointer;}
+.blue_btn:hover{background:#056a91;}
+.blue_btn:active{background:#147aa1;}
+.gray_btn{background:#555; color:#fff; font-weight:bold; font-size:14px; padding:4px 15px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.065) inset; cursor:pointer;}
+.gray_btn:hover{background:#444;}
+.gray_btn:active{background:#555;}
+.UGC_main_container{width:1000px; margin:0px auto; overflow:hidden; position:relative}
+.UGC_left_side{width:380px; background:#f2f2f2; float:left; padding:10px 0;}
+.UGC_right_side{width:610px; float:right;}
+.UGC_title{height:36px; line-height:36px; background:url(../images/UGC_title_bg.png) repeat-x;padding:0px 5px; text-shadow:0px 1px 1px #fff; font-size:14px;}
+.UGC_title_icon{width:24px; height:20px; background:url(../images/UGC_title_icon.png) no-repeat center; display:inline-block;vertical-align:middle}
+.UGC_date_icon{width:24px; height:24px; background:url(../images/UGC_date.png) no-repeat center; display:inline-block;vertical-align:middle}
+.UGC_upload_icon{width:24px; height:24px; background:url(../images/UGC_fj.png) no-repeat center; display:inline-block;vertical-align:middle}
+.UGC_postby_icon{width:24px; height:24px; background:url(../images/UGC_postby.png) no-repeat center; display:inline-block;vertical-align:middle}
+.UGC_local_icon{width:24px; height:24px; background:url(../images/UGC_local.png) no-repeat center; display:inline-block;vertical-align:middle}
+.UGC_delete_icon{width:24px; height:24px; background:url(../images/UGC_delete.png) no-repeat center; display:inline-block;vertical-align:middle; cursor:pointer}
+.UGC_success_icon{width:114px; height:114px; background:url(../images/UGC_success.png) no-repeat center; display:inline-block;vertical-align:middle; float:left}
+.UGC_left_ul{width:98%; margin:0px auto;}
+.UGC_left_ul li{padding:10px 10px; background:url(../images/public_line.png) repeat-x bottom; text-shadow:0px 1px 1px #fff; vertical-align:middle; position:relative;}
+.UGC_left_ul li label{ position:absolute; right:20px; bottom:1px;font-size:11px;color:#f00}
+.UGC_left_ul i{width:60px; text-align:left; display:inline-block; font-style:normal; font-size:14px;}
+.UGC_left_ul input,.UGC_left_ul textarea{border:1px solid #dbdbdb; border-radius:3px; background:#fff; padding:4px 8px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.065) inset; width:250px; color:#999;font-size:12px}
+.UGC_left_ul textarea{ resize:none; height:60px;}
+i.UGC_upload_icon{width:24px;height:24px;}
+input.length_1{width:220px; border-radius:3px 0 0 3px}
+.UGC_map{margin-top:4px;}
+.UGC_loacl{margin-top:5px;}
+input.UGC_loacl_input{border:1px solid #dbdbdb; border-radius:3px; background:#fff; padding:4px 8px;box-shadow: 0 2px 2px rgba(0, 0, 0, 0.065) inset; font-size:12px; width:585px; color:#999;}
+.UGC_local_h{background:url(../images/public_line.png) repeat-x bottom;padding:5px;margin-bottom:7px;color:#888;}
+.UGC_botton_area{margin-top:10px;}
+.UGC_bg2{padding:5px 0 5px 70px; max-height:50px; overflow:auto}
+.UGC_bg2 li{padding:2px; background:none;}
+.UGC_loacl li{position:relative}
+.UGC_loacl li label.error{ position:absolute; color:#f00; bottom:-10px; right:0px}
+li.UGC_li_height{padding:5px 10px;font-size:14px}
+.UGC_box{width:480px;padding:20px;height:120px;  background:#f9f9f9; box-shadow:2px 3px 6px rgba(0,0,0,0.25); position:absolute; top:50%; left:50%; margin:-75px 0 0 -260px; display:none; z-index:999;}
+.UGC_box_text{ float:left; margin:0 0 0 10px; width:340px;}
+.backbg{background:#000; height:100%;width:100%;filter:alpha(opacity=40);-moz-opacity:0.4;opacity:0.4; position:absolute;top:0px; left:0px; z-index:998}
+.UGC_infor{color:#999;width:220px; display:block; position:absolute; right:0px; top:5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#fine-uploader{float:left;}
+.overflow{overflow:hidden;}
+.qq-upload-list{max-height:100px; overflow-y:auto; overflow-x:hidden}
+.qq-upload-list li{background-color:#fafafa;width:350px; padding:3px;}
+.qq-upload-list li span{display:inline-block; font-size:12px;}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-retry, .qq-upload-failed-text, .qq-upload-finished, .qq-upload-delete{margin-right:3px;}
+.qq-upload-cancel{width:24px; height:24px; background:url(../images/UGC_delete.png) no-repeat center; display:inline-block;vertical-align:middle; cursor:pointer; font-size:0px;}
+.qq-upload-button{background:#147aa1; text-shadow:none; font-weight:bold; font-size:14px; width:120px;}
+.qq-upload-button:hover{background:#007eae}
+.qq-upload-list li.qq-upload-success{background-color:#FAFAFA; color:#555}
+.qq-upload-delete{font-weight:bold; color:#f00; text-decoration:underline}
+.qq-upload-finished{width:24px; height:24px; background:url(../images/finish.png) no-repeat center; display:inline-block;vertical-align:middle; cursor:pointer}
+.qq-upload-size{color:#147aa1}
+
+
+

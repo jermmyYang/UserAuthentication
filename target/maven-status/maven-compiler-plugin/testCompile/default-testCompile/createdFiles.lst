@@ -1,0 +1,5 @@
+cn\com\test\TestOAuth2Authentication.class
+cn\com\test\Test.class
+cn\com\test\TestAuthorizationRequest.class
+cn\com\test\TestAuthentication.class
+cn\com\test\TestOAuth2AccessToken.class

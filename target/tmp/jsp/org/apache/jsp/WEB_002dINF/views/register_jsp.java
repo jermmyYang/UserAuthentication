@@ -1,0 +1,424 @@
+package org.apache.jsp.WEB_002dINF.views;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_set_var_value_nobody;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_c_set_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_c_set_var_value_nobody.release();
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html; charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("<!DOCTYPE html>\n");
+      out.write("<!-- saved from url=(0062)http://i.360.cn/reg?src=pcw_i360&destUrl=http%3A%2F%2Fi.360.cn -->\n");
+      out.write("<html>\n");
+      out.write("<!--<![endif]-->\n");
+      out.write("<head>\n");
+      out.write("\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("\n");
+      out.write("\n");
+      if (_jspx_meth_c_set_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("\n");
+      out.write("<meta charset=\"utf-8\">\n");
+      out.write("<meta name=\"renderer\" content=\"webkit\">\n");
+      out.write("<title>注册-360个人中心</title>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<meta name=\"Keywords\" content=\"360个人中心\">\n");
+      out.write("<meta name=\"Description\" content=\"360个人中心\">\n");
+      out.write("<!--公共的样式-->\n");
+      out.write("\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${ctx }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/resources/js/jquery-1.8.3.min.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${ctx }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/resources/js/basic/sy.js\"></script>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${ctx }", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/resources/js/basic/sy.url.js\"></script>\n");
+      out.write("\n");
+      out.write("<link rel=\"stylesheet\"\n");
+      out.write("\thref=\"http://i.360.cn/static/css/import/base.css?v=2abc9.css\">\n");
+      out.write("<!--页面自定义样式-->\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<link rel=\"stylesheet\"\n");
+      out.write("\thref=\"http://i.360.cn/static/css/import/uc_login_reg.css?v=0a4ad.css\">\n");
+      out.write("\n");
+      out.write("</head>\n");
+      out.write("\n");
+      out.write("<body style=\"height: 867px;\">\n");
+      out.write("\n");
+      out.write("\t<div id=\"doc\">\n");
+      out.write("\t\t<!--通用头部-->\n");
+      out.write("\n");
+      out.write("\t\t<div id=\"hd\" class=\"clearfix\" style=\"padding-top: 96px;\">\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<!--内容部分-->\n");
+      out.write("\n");
+      out.write("\t\t<div class=\"info\" style=\"margin-top: 132px;\">\n");
+      out.write("\t\t\t<!--<span><a target=\"_blank\" href=\"http://baoxian.360.cn?from=i360\">360健康计划</a><i class=\"hot\"></i></span>-->\n");
+      out.write("\n");
+      out.write("\t\t\t<span><a href=\"/authentication\"\n");
+      out.write("\t\t\t\tclass=\"reg2login\">已有帐号</a></span>\n");
+      out.write("\t\t</div>\n");
+      out.write("\t\t<div id=\"quc-bd\" class=\"quc-clearfix reg-wrapper2\">\n");
+      out.write("\t\t\t<!--\n");
+      out.write("\t<div class=\"reg-nav\">\n");
+      out.write("\t\t<ul id=\"regWays\" class=\"quc-clearfix\">\n");
+      out.write("\t\t\t<li class=\"cur mobile-sign-up\"><a href=\"#\" hidefocus=\"true\"><i class=\"icon tel-icon\"></i>手机注册</a></li>\n");
+      out.write("\t\t\t<li class=\"ncur email-sign-up\"><a href=\"#\" hidefocus=\"true\"><i class=\"icon email-icon\"></i>邮箱注册</a></li>\n");
+      out.write("\t\t</ul>\n");
+      out.write("\t</div>\n");
+      out.write("\t-->\n");
+      out.write("\n");
+      out.write("\t\t\t<div class=\"content\">\n");
+      out.write("\t\t\t\t<div id=\"regWrap\">\n");
+      out.write("\t\t\t\t\t<div class=\"quc-sign-up-wrapper quc-wrapper quc-page\">\n");
+      out.write("\t\t\t\t\t\t<div class=\"quc-mod-sign-up quc-clearfix\">\n");
+      out.write("\t\t\t\t\t\t\t<div class=\"quc-left-bar\" style=\"display: none;\">\n");
+      out.write("\t\t\t\t\t\t\t\t<ul class=\"quc-sign-up-type\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t<li class=\"quc-type-mobile quc-current\"><a\n");
+      out.write("\t\t\t\t\t\t\t\t\t\thref=\"http://i.360.cn/reg?src=pcw_i360&destUrl=http%3A%2F%2Fi.360.cn#\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-icon quc-icon-mobile\"></i>手机注册</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<li class=\"quc-type-email\"><a\n");
+      out.write("\t\t\t\t\t\t\t\t\t\thref=\"http://i.360.cn/reg?src=pcw_i360&destUrl=http%3A%2F%2Fi.360.cn#\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-icon quc-icon-email\"></i>邮箱注册</a></li>\n");
+      out.write("\t\t\t\t\t\t\t\t</ul>\n");
+      out.write("\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t<div class=\"quc-main\">\n");
+      out.write("\t\t\t\t\t\t\t\t<div class=\"quc-tip-wrapper quc-global-error\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t<p class=\"quc-tip quc-tip-error\"></p>\n");
+      out.write("\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t<form class=\"quc-form\" method=\"post\" action=\"\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t<div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<div\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-field quc-field-mobile quc-input-middle quc-clearfix\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tstyle=\"margin-bottom: 10px; border-bottom: none;\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<span class=\"quc-ipbox\" style=\"display: block\"><label\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-label\" for=\"quc_account_930979981\">手机号</label><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input-bg\"><input\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input quc-input-mobile\" type=\"tel\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tname=\"account\" data-name=\"mobile\" maxlength=\"11\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"account\"></span><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"tipwrapper-phoneReg msgtipsleft\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tstyle=\"top: 55px; left: 518px;\" id=\"phone_error\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"ico ico-err-3\"></i><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"border-right msgtipsright\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"tips-phoneReg\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"text-tips tips-phoneReg reg-tips-wrong\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-tip\" data-default-tip=\"请输入您的手机号码 \"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"phone_mesg\">请输入您的手机号码 </span></span></span></span></span><a\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\thref=\"javascript:void(0);\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-button quc-button-blue quc-get-sms-token\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tid=\"getCode\">免费获取校验码</a><a class=\"quc-mobile-tip quc-link\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\thref=\"javascript:void(0);\" target=\"_blank\" tabindex=\"99\">校验码常见问题</a>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<div class=\"quc-ipbox\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<div class=\"quc-field quc-field-sms-token quc-input-long\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"quc-label\" for=\"quc_smscode_930979982\">校验码</label><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input-bg\"><input\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input quc-input-sms-token\" type=\"text\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tname=\"smscode\" data-name=\"smsToken\" maxlength=\"6\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"smscode\"></span><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"tipwrapper-phoneReg errortipsleft\" id=\"code_error\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"ico ico-err-3\"></i><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"border-right errortipsright\" ><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"tips-phoneReg\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"text-tips tips-phoneReg reg-tips-wrong\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-tip\" data-default-tip=\"请输入短信中6位数字校验码\" id=\"code_message\">请输入短信中6位数字校验码</span></span></span></span>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<div class=\"quc-field quc-field-password quc-input-long\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"quc-label\" for=\"quc_password_930979983\">密码</label><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input-bg\"><input\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input quc-input-password\" type=\"password\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tname=\"password\" maxlength=\"20\" id=\"password\"></span><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"tipwrapper-phoneReg errortipsleft\" id=\"password_error\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"ico ico-err-3\"></i><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"border-right errortipsright\" ><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tid=\"tips-phoneReg\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"text-tips tips-phoneReg reg-tips-wrong\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-tip\" data-default-tip=\"6-20个字符(区分大小写)\">6-20个字符</span></span></span></span>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t<div\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-field quc-field-password-again quc-input-long\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t<label class=\"quc-label\" for=\"quc_passwordAgain_930979984\">确认密码</label><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input-bg\"><input\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-input quc-input-password-again\" type=\"password\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tname=\"passwordAgain\" maxlength=\"20\" id=\"passwordAgain\"></span><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"tipwrapper-phoneReg errortipsleft\" id=\"password_again_error\"><i\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"ico ico-err-3\"></i><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"border-right errortipsright\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t><span id=\"tips-phoneReg\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"text-tips tips-phoneReg reg-tips-wrong\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-tip\" data-default-tip=\"请再次输入密码\" id=\"passwordAgain_message\">请再次输入密码</span></span></span></span>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<p class=\"quc-field-submit\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<input class=\"quc-button quc-button-sign-up\" type=\"button\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tid=\"register\" value=\"立即注册\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t</p>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<p class=\"quc-field-licence\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t<label><input class=\"quc-checkbox\" type=\"checkbox\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tname=\"is_agree\" data-name=\"agreeLicence\" checked=\"checked\"><span\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tstyle=\"font-size: 12px;\">我已经阅读并同意<a\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-link green\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\t\thref=\"http://i.360.cn/pub/protocol.html\" target=\"_blank\">《用户服务条款》</a></span></label>\n");
+      out.write("\t\t\t\t\t\t\t\t\t</p>\n");
+      out.write("\t\t\t\t\t\t\t\t\t<p class=\"quc-login\" style=\"display: none;\">\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t已有帐号，<a href=\"javascript:void(0)\"\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\tclass=\"quc-link quc-link-login\">立即登录</a>\n");
+      out.write("\t\t\t\t\t\t\t\t\t</p>\n");
+      out.write("\t\t\t\t\t\t\t\t</form>\n");
+      out.write("\t\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t\t</div>\n");
+      out.write("\t\t\t\t</div>\n");
+      out.write("\t\t\t</div>\n");
+      out.write("\t\t</div>\n");
+      out.write("\n");
+      out.write("\t</div>\n");
+      out.write("\t<!--公共需要的全局变量-->\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t<script type=\"text/javascript\">\n");
+      out.write("\t\n");
+      out.write("\t\n");
+      out.write("\t\t$(\"#getCode\").click(function() {\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tvar account = $(\"#account\").val();\n");
+      out.write("\n");
+      out.write("\t\t\tvar that = $(this);\n");
+      out.write("\n");
+      out.write("\t\t\tif (account == \"\" || account == null) {\n");
+      out.write("\n");
+      out.write("\t\t\t\t$(\"#phone_error\").css(\"display\", \"inline\")\n");
+      out.write("\n");
+      out.write("\t\t\t} else {\n");
+      out.write("\n");
+      out.write("\t\t\t\tif (!sy.isPhone(account)) {\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t$(\"#phone_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\t\t$(\"#phone_mesg\").text(\"请输入正确的手机号\")\n");
+      out.write("\n");
+      out.write("\t\t\t\t} else {\n");
+      out.write("\t\t\t\t\t$(\"#phone_error\").css(\"display\", \"none\");\n");
+      out.write("\t\t\t\t\tvar url = sy.urls.GET_SMS_CODE;\n");
+      out.write("\t\t\t\t\tvar params = {\n");
+      out.write("\t\t\t\t\t\t\"mobile\" : account\n");
+      out.write("\t\t\t\t\t}\n");
+      out.write("\t\t\t\t\tsy.globalAjax(url, params, \"POST\", function() {\n");
+      out.write("\t\t\t\t\t\tcomputeTime(that);\n");
+      out.write("\t\t\t\t\t});\n");
+      out.write("\n");
+      out.write("\t\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t});\n");
+      out.write("\n");
+      out.write("\t\tfunction computeTime(that){\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tthat.text(\"120秒后请重试\").attr(\"disabled\", \"true\");\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tvar timer = 120;\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tsetInterval(function(){\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t\ttimer = timer-1;\n");
+      out.write("\t\t\t\tthat.text(timer+\"秒后请重试\").attr(\"disabled\", \"true\");\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\t},1000);\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tsetTimeout(function() {\n");
+      out.write("\t\t\t\tthat.text(\"免费获取校验码\").attr(\"disabled\", \"false\");\n");
+      out.write("\t\t\t}, 120000);\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t}\n");
+      out.write("\t\t\n");
+      out.write("\t\tfunction validate(){\n");
+      out.write("\t\t\t\n");
+      out.write("\t\t\tconsole.log(\"asd\");\n");
+      out.write("\t\t\tvar account = $(\"#account\").val();\n");
+      out.write("\n");
+      out.write("\t\t\tvar that = $(this);\n");
+      out.write("\n");
+      out.write("\t\t\tif (account == \"\" || account == null) {\n");
+      out.write("\n");
+      out.write("\t\t\t\t$(\"#phone_error\").css(\"display\", \"inline\")\n");
+      out.write("\t\t\t\treturn false;\n");
+      out.write("\t\t\t} else {\n");
+      out.write("\t\t\t\t$(\"#phone_error\").css(\"display\", \"none\");\n");
+      out.write("\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t\tvar code = $(\"#smscode\").val();\n");
+      out.write("\n");
+      out.write("\t\t\tif (code == \"\" || code == null || code.length < 6) {\n");
+      out.write("\t\t\t\t$(\"#code_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\treturn false;\n");
+      out.write("\t\t\t} else {\n");
+      out.write("\t\t\t\t$(\"#code_error\").css(\"display\", \"none\");\n");
+      out.write("\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t\tvar password = $(\"#password\").val();\n");
+      out.write("\n");
+      out.write("\t\t\tif (password == \"\" || password == null\n");
+      out.write("\t\t\t\t\t|| password.length<6 || password.length>20) {\n");
+      out.write("\t\t\t\t$(\"#password_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\treturn false;\n");
+      out.write("\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t\telse {\n");
+      out.write("\t\t\t\t$(\"#password_error\").css(\"display\", \"none\");\n");
+      out.write("\t\t\t}\n");
+      out.write("\n");
+      out.write("\t\t\tvar confirmPassword = $(\"#passwordAgain\").val();\n");
+      out.write("\n");
+      out.write("\t\t\tif (confirmPassword == \"\"\n");
+      out.write("\t\t\t\t\t|| confirmPassword == null\n");
+      out.write("\t\t\t\t\t|| confirmPassword.length<6 \n");
+      out.write("\t\t\t\t\t|| confirmPassword.length>20\n");
+      out.write("\t\t\t){\n");
+      out.write("\t\t\t\t$(\"#password_again_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\treturn false;\n");
+      out.write("\t\t\t}\n");
+      out.write("\t\t\telse if(confirmPassword!=password){\n");
+      out.write("\t\t\t\t$(\"#passwordAgain_message\").text(\"两次输入的密码不一致，请重新输入\");\n");
+      out.write("\t\t\t\treturn false;\n");
+      out.write("\t\t\t}\n");
+      out.write("\t\t\telse{\n");
+      out.write("\t\t\t\t$(\"#password_again_error\").css(\"display\", \"none\");\n");
+      out.write("\t\t\t}\n");
+      out.write("\t\t\t\t\n");
+      out.write("\t\t\treturn true;\n");
+      out.write("\t\t}\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t\t$(\"#register\").click(function() {\n");
+      out.write("\n");
+      out.write("\t\t\t\t\t\t\tvar flag = validate();\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\tif(flag){\n");
+      out.write("\t\t\t\t\t\t\t\tvar url = sy.urls.USER_REGISTER;\n");
+      out.write("\t\t\t\t\t            \n");
+      out.write("\t\t\t\t\t\t\t\tvar params = {\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\"code\":$(\"#smscode\").val(),\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\"mobile\":$(\"#account\").val(),\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\"password\":$(\"#password\").val()\n");
+      out.write("\t\t\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\t}\n");
+      out.write("\t\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t            sy.globalAjax(url,params,\"POST\",function(data){\n");
+      out.write("\t\t\t\t\t            \t\n");
+      out.write("\t\t\t\t\t            \t  if(data.status==10002 || data.status==\"10002\"){\n");
+      out.write("\t\t\t\t\t            \t\t  $(\"#phone_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\t\t  \t\t\t\t\t  $(\"#phone_mesg\").text(\"该手机号已经注册过了，请直接登录\");\n");
+      out.write("\t\t\t\t\t            \t  }\n");
+      out.write("\t\t\t\t\t            \t  else if(data.status==10001 || data.status==\"10001\"){\n");
+      out.write("\t\t\t\t\t            \t\t  $(\"#code_error\").css(\"display\", \"inline\");\n");
+      out.write("\t\t\t\t\t            \t\t  $(\"#code_message\").text(\"验证码不正确\");\n");
+      out.write("\t\t\t\t\t            \t  }\n");
+      out.write("\t\t\t\t\t            \t  else{\n");
+      out.write("\t\t\t\t\t            \t\t  window.location.href = \"/authentication/get/person/\"+data;\n");
+      out.write("\t\t\t\t\t            \t  }\n");
+      out.write("\t\t\t\t\t            \t\n");
+      out.write("\t\t\t\t\t            });\n");
+      out.write("\t\t\t\t\t\t\t}\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t\t\t\t\t\t\t\n");
+      out.write("\t    });\n");
+      out.write("\t</script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\t<!--\n");
+      out.write("<br>\t6e84fadb576b6535\t==\tpage_load\n");
+      out.write("<br>\t6e84fadb576b6535\t==\tpage_load:0.015\n");
+      out.write("\n");
+      out.write("-->\n");
+      out.write("</body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+
+  private boolean _jspx_meth_c_set_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_set_0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _jspx_tagPool_c_set_var_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_set_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_set_0.setParent(null);
+    _jspx_th_c_set_0.setVar("ctx");
+    _jspx_th_c_set_0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    int _jspx_eval_c_set_0 = _jspx_th_c_set_0.doStartTag();
+    if (_jspx_th_c_set_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
+      return true;
+    }
+    _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
+    return false;
+  }
+}
